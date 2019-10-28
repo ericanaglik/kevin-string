@@ -21,3 +21,10 @@ String.prototype.capitalizeWords = function() {
 const result3 = "do all the things".capitalizeWords() // returns "Do All The Things"
 console.log(result3)
 
+String.prototype.removeExtraSpaces = function() {
+    return this.trim()
+}
+
+const result4 = "  Hello World!  ".removeExtraSpaces() // returns "Do All The Things"
+console.log(result4)
+
