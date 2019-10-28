@@ -9,6 +9,15 @@ String.prototype.allCaps = function() {
     return this.toUpperCase()
 }
 
-const result2 = "hello".allCaps() // returns "HELLO"
+const result2 = "foo bar".allCaps() // returns "FOO BAR"
 console.log(result2)
+
+String.prototype.capitalizeWords = function() {
+    return this.split(' ').map((word) => {
+        return word.capitalize()
+    }).join(' ')
+}
+
+const result3 = "do all the things".capitalizeWords() // returns "Do All The Things"
+console.log(result3)
 
