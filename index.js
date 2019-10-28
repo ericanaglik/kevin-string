@@ -4,3 +4,11 @@ String.prototype.capitalize = function() {
  
  const result = "hello".capitalize() // returns "Hello"
 console.log(result)
+
+String.prototype.allCaps = function() {
+    return this.toUpperCase()
+}
+
+const result2 = "hello".allCaps() // returns "HELLO"
+console.log(result2)
+
