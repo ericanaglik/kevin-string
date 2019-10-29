@@ -35,3 +35,10 @@ String.prototype.kabobCase = function() {
 const result5 = "  Hello World  ".kabobCase() // returns "hello-world"
 console.log(result5)
 
+String.prototype.snakeCase = function() {
+    return this.removeExtraSpaces().toLowerCase().split(' ').join('_')
+}
+
+const result6 = "  What The Heck  ".snakeCase() // returns "what_the_heck"
+console.log(result6)
+
