@@ -25,6 +25,15 @@ String.prototype.removeExtraSpaces = function() {
     return this.trim()
 }
 
-const result4 = "  Hello World!  ".removeExtraSpaces() // returns "Do All The Things"
+const result4 = "  Hello World!  ".removeExtraSpaces() // returns "Hello World!"
 console.log(result4)
+
+String.prototype.kabobCase = function() {
+    return this.split(' ').map((word) => {
+        return word.toLowerCase()
+    }).join('-')
+}
+
+const result5 = "Hello World".kabobCase() // returns "hello-world"
+console.log(result5)
 
