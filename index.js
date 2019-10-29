@@ -29,11 +29,9 @@ const result4 = "  Hello World!  ".removeExtraSpaces() // returns "Hello World!"
 console.log(result4)
 
 String.prototype.kabobCase = function() {
-    return this.split(' ').map((word) => {
-        return word.toLowerCase()
-    }).join('-')
+    return this.removeExtraSpaces().toLowerCase().split(' ').join('-')
 }
 
-const result5 = "Hello World".kabobCase() // returns "hello-world"
+const result5 = "  Hello World  ".kabobCase() // returns "hello-world"
 console.log(result5)
 
