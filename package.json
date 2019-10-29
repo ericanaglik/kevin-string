@@ -1,10 +1,10 @@
 {
-  "name": "kevin_string",
-  "version": "1.0.1",
+  "name": "@ericanaglik/kevin-string",
+  "version": "1.0.2",
   "description": "simple string commands",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ericanaglik/kevin-string/issues"
   },
-  "homepage": "https://github.com/ericanaglik/kevin-string#readme"
+  "homepage": "https://github.com/ericanaglik/kevin-string#readme",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
