@@ -7,8 +7,6 @@
       evenCaps(): string;
       kabobCase(): string;
       snakeCase(): string;
-      stripSpaces(): string;
-      stripExtraSpaces(): string;
       removeExtraSpaces(): string;
       capitalizeWords(): string;
       camelCase(): string;
